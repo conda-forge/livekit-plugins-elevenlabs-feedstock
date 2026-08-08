@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 1.6.7
+  version: 1.6.9
 
 package:
   name: livekit-plugins-elevenlabs
@@ -9,7 +9,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/l/livekit-plugins-elevenlabs/livekit_plugins_elevenlabs-${{ version }}.tar.gz
-    sha256: d1b739426c15ab49ebef5a061c62488323625b637011bba549e4d8b48cba9aee
+    sha256: ca8d27ffd6aa483999c2a124c6ca9cf3ab4faabc3427de1e8909ed64592f31f5
   - url: https://raw.githubusercontent.com/livekit/agents/refs/tags/livekit-agents%40${{ version }}/LICENSE
     sha256: c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
     file_name: LICENSE
@@ -26,7 +26,7 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - livekit-agents >=1.6.7
+    - livekit-agents >=1.6.9
 tests:
   - python:
       python_version:
